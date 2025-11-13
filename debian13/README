@@ -46,11 +46,13 @@
 
 4. Install Android emulator
    a. If not mounted, mount the USB (/media/debian/data)
-   b. Untar Android.tar.gz to /dev/sda3
-      - sudo tar zxvf /media/debian/data/Android.tar.gz -C /data
-   c. Change to /data/Android/avd
-   d. In SeqStudio.ini, set path to /data/Android/avd/SeqStudio.avd
+   b. Download Android SDK:
+      https://github.com/youngmin-kim-tfs/gsd-debian-aosp/releases/download/android-sdk/android.tgz
+   b. Untar android.tgz to /dev/sda3
+      - sudo tar zxvf /media/debian/data/android.tgz -C /data
+   c. Change to /data/android/avd
+   d. In SeqStudio.ini, set path to /data/android/avd/SeqStudio.avd
    e. Launch the emulator:
-      - ANDROID_SDK_HOME=/data/Android sdk/emulator/emulator -avd SeqStudio -no-snapshot
+      - ANDROID_SDK_HOME=/data/android sdk/emulator/emulator -avd SeqStudio -no-snapshot
 
 
